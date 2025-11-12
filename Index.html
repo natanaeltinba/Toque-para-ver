@@ -57,7 +57,7 @@
 <body>
   <div class="app" role="main">
     <h1>Toque para ver</h1>
-    <p class="lead">Ao tocar em <strong>Visualizar</strong> você ver élização.</p>
+    <p class="lead">Ao tocar em <strong>Visualizar</strong> você verá sua localização atual no mapa. Isso requer permissão do dispositivo.</p>
 
     <div class="center">
       <button class="primary" id="btn">Visualizar</button>
@@ -68,7 +68,7 @@
       <div><strong>Coordenadas:</strong> <span id="coords"></span></div>
       <div><strong>Hora:</strong> <span id="hora"></span></div>
       <div id="map"></div>
-      <small class="notelidor.</small>
+      <small class="note">A localização é mostrada somente neste dispositivo e NÃO é enviada a nenhum servidor.</small>
     </div>
 
     <footer>
@@ -91,7 +91,7 @@
 
     btn.addEventListener('click', async () => {
       // Confirmação explícita
-      const ok = confirm(continuar?");
+      const ok = confirm("Ao abrir, você concorda em permitir que este site ACESSE sua localização atual para mostrar no mapa. Deseja continuar?");
       if (!ok) {
         statusElm.textContent = 'Cancelado pelo usuário';
         return;
@@ -156,4 +156,4 @@
     }
   </script>
 </body>
-</hdispositivop
+</html>
